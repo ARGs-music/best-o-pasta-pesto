@@ -127,9 +127,9 @@ PartPFiveVoiceOne =  \relative a' {
     \time 5/4  \once \override NoteHead #'style = #'cross e4 \once
     \override NoteHead #'style = #'cross e8 \once \override NoteHead
     #'style = #'cross e8 \once \override NoteHead #'style = #'cross e4
-    \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 6
-    \numericTimeSignature\time 4/4  a4 \once \override NoteHead #'style
-    = #'cross e'8 \once \override NoteHead #'style = #'cross e8 \once
+    a,8 a8 \once \override NoteHead #'style = #'cross e'4 | % 6
+    \numericTimeSignature\time 4/4  r4 \once \override NoteHead #'style
+    = #'cross e8 \once \override NoteHead #'style = #'cross e8 \once
     \override NoteHead #'style = #'cross e4 \once \override NoteHead
     #'style = #'cross e4 | % 7
     \once \override NoteHead #'style = #'cross e4 \once \override
