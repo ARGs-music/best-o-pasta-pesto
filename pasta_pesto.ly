@@ -27,7 +27,8 @@ PartPOneVoiceOne =  \relative f' {
     r2 r4 c4 | % 17
     d2 bes2 | % 18
     bes4. a8 ~ a4. r8 | % 19
-    \time 2/4  R2*8 \bar "|."
+    \time 2/4  R2 | \barNumberCheck #20
+    \numericTimeSignature\time 4/4  R1*4 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
@@ -52,7 +53,11 @@ PartPTwoVoiceOne =  \relative bes, {
     R1 | % 17
     bes8 bes8 bes8 bes8 d8 d8 d4 | % 18
     es8 es4 f8 ~ f4. r8 | % 19
-    \time 2/4  R2*8 \bar "|."
+    \time 2/4  r4 f,8 f8 | \barNumberCheck #20
+    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
+    f4 r4 r4 f8 f8 | % 22
+    f8 f8 r4 r4 f8 f8 | % 23
+    f4 r4 r2 \bar "|."
     }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -61,7 +66,8 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     than the rest -- "o." Put some bas -- il in the food pro -- cess --
     "or." Add some cheese and gar -- "lic." Ok -- "ay," "more." "Then,"
     you add the pine "nuts." Ok -- "ay," al -- "monds." Salt and ol --
-    ive oi -- l and pep -- "per," "too." }
+    ive oi -- l and pep -- "per," "too." "Then," you "mix..." and squish
+    it "down..." add some wat -- "er..." mix some "more." }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
@@ -86,7 +92,11 @@ PartPThreeVoiceOne =  \relative bes, {
     R1 | % 17
     f8 f8 f8 f8 bes8 bes8 bes4 | % 18
     bes8 bes4 c8 ~ c4. r8 | % 19
-    \time 2/4  R2*8 \bar "|."
+    \time 2/4  r4 f,8 f8 | \barNumberCheck #20
+    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
+    f4 r4 r4 f8 f8 | % 22
+    f8 f8 r4 r4 f8 f8 | % 23
+    f4 r4 r2 \bar "|."
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -96,7 +106,8 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
-    "too." }
+    "too." "Then," you "mix..." and squish it "down..." add some wat --
+    "er..." mix some "more." }
 PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
@@ -116,7 +127,8 @@ PartPFourVoiceOne =  \relative bes,, {
     R1 | % 17
     r4 bes,4 g2 | % 18
     g2 f2 | % 19
-    \time 2/4  R2*8 \bar "|."
+    \time 2/4  R2 | \barNumberCheck #20
+    \numericTimeSignature\time 4/4  R1*4 \bar "|."
     }
 
 PartPFiveVoiceOne =  \relative a' {
@@ -171,7 +183,13 @@ PartPFiveVoiceOne =  \relative a' {
         a,8 a8 a8 }
     | % 19
     \time 2/4  a4 r4 | \barNumberCheck #20
-    R2*7 \bar "|."
+    \numericTimeSignature\time 4/4  r4 a4 a4 r4 | % 21
+    r8 a8 \once \override TupletBracket #'stencil = ##f
+    \times 2/3  {
+        a8 a8 a8 }
+    a4 r4 | % 22
+    r4 a8 a8 a4 r4 | % 23
+    r8 a4 a8 a4 r4 \bar "|."
     }
 
 
