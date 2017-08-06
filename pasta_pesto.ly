@@ -29,7 +29,9 @@ PartPOneVoiceOne =  \relative f' {
     bes4. a8 ~ a4. r8 | % 19
     \time 2/4  R2 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  R1*5 | % 25
-    c4 c8 d8 ~ d2 \bar "|."
+    c4 c8 d8 ~ d4 r4 | % 26
+    r2. r8 bes8 | % 27
+    c4 c8 d8 ~ d4 bes'4 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
@@ -60,7 +62,9 @@ PartPTwoVoiceOne =  \relative bes, {
     f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 f'8 f8 | % 24
     bes8 bes8 g8 g8 f8 f8 c8 c8 | % 25
-    f,8 f8 f8 bes8 ~ bes2 \bar "|."
+    f,8 f8 f8 bes8 ~ bes4 r4 | % 26
+    r2. r8 bes8 | % 27
+    c8 d8 c8 bes8 ~ bes4 bes'4 \bar "|."
     }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -72,7 +76,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     ol -- ive oi -- l and pep -- "per," "too." "Then," you "mix..." and
     squish it "down..." add some wat -- "er..." then mix some "more."
     Then you know "it's" best -- o pest -- o "'cause" I made it for
-    "you!" }
+    "you!" I made it for "you," "yeah!" }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
@@ -103,7 +107,9 @@ PartPThreeVoiceOne =  \relative bes, {
     f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 d'8 d8 | % 24
     f8 f8 d8 d8 d8 d8 g,8 g8 | % 25
-    a8 a8 f8 f8 ~ f2 \bar "|."
+    a8 a8 f8 f8 ~ f4 r4 | % 26
+    r2. r8 f8 | % 27
+    f8 f8 f8 f8 ~ f4 f'4 \bar "|."
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -115,7 +121,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
     "er..." then mix some "more." Then you know "it's" best -- o pest --
-    o "'cause" I made it for "you!" }
+    o "'cause" I made it for "you!" I made it for "you," "yeah!" }
 PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
@@ -138,7 +144,9 @@ PartPFourVoiceOne =  \relative bes,, {
     \time 2/4  R2 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  R1*4 | % 24
     bes2. es4 | % 25
-    f4 f,8 bes8 ~ bes2 \bar "|."
+    f4 f,8 bes8 ~ bes4 r4 | % 26
+    R1 | % 27
+    f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
 
 PartPFiveVoiceOne =  \relative a' {
@@ -204,7 +212,13 @@ PartPFiveVoiceOne =  \relative a' {
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
     #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 25
     a,4 \once \override NoteHead #'style = #'cross e'8 \once \override
-    NoteHead #'style = #'cross e4. r4 \bar "|."
+    NoteHead #'style = #'cross e4 a,4 a8 | % 26
+    \once \override NoteHead #'style = #'cross e'4 \once \override
+    TupletBracket #'stencil = ##f
+    \times 2/3  {
+        a,8 a8 a8 }
+    \once \override NoteHead #'style = #'cross e'8 a,8 r8 r8 | % 27
+    r4. a4. <a \tweak #'style #'cross e'>4 \bar "|."
     }
 
 
