@@ -28,7 +28,9 @@ PartPOneVoiceOne =  \relative f' {
     d2 bes2 | % 18
     bes4. a8 ~ a4. r8 | % 19
     \time 2/4  R2 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  R1*4 \bar "|."
+    \numericTimeSignature\time 4/4  R1*4 | % 24
+    r2 bes4 c4 | % 25
+    c4 c8 d8 ~ d4 r4 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
@@ -57,7 +59,9 @@ PartPTwoVoiceOne =  \relative bes, {
     \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
     f4 r4 r4 f8 f8 | % 22
     f8 f8 r4 r4 f8 f8 | % 23
-    f4 r4 r2 \bar "|."
+    f4 r4 r4 f'8 f8 | % 24
+    bes8 bes8 g8 g8 f8 f8 c8 c8 | % 25
+    f,8 f8 f8 bes8 ~ bes2 \bar "|."
     }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -67,7 +71,8 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "or." Add some cheese and gar -- "lic." Ok -- "ay," "more." "Then,"
     you add the pine "nuts." Ok -- "ay," al -- "monds." Salt and ol --
     ive oi -- l and pep -- "per," "too." "Then," you "mix..." and squish
-    it "down..." add some wat -- "er..." mix some "more." }
+    it "down..." add some wat -- "er..." mix some "more." Then you know
+    "it's" best -- o pest -- o "'cause" I made it for "you!" }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
@@ -96,7 +101,9 @@ PartPThreeVoiceOne =  \relative bes, {
     \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
     f4 r4 r4 f8 f8 | % 22
     f8 f8 r4 r4 f8 f8 | % 23
-    f4 r4 r2 \bar "|."
+    f4 r4 r4 d'8 d8 | % 24
+    f8 f8 d8 d8 d8 d8 g,8 g8 | % 25
+    a8 a8 f8 f8 ~ f2 \bar "|."
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -107,7 +114,8 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
-    "er..." mix some "more." }
+    "er..." mix some "more." Then you know "it's" best -- o pest -- o
+    "'cause" I made it for "you!" }
 PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
@@ -128,7 +136,9 @@ PartPFourVoiceOne =  \relative bes,, {
     r4 bes,4 g2 | % 18
     g2 f2 | % 19
     \time 2/4  R2 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  R1*4 \bar "|."
+    \numericTimeSignature\time 4/4  R1*4 | % 24
+    bes2. es4 | % 25
+    f4 f,8 bes8 ~ bes2 \bar "|."
     }
 
 PartPFiveVoiceOne =  \relative a' {
@@ -189,7 +199,12 @@ PartPFiveVoiceOne =  \relative a' {
         a8 a8 a8 }
     a4 r4 | % 22
     r4 a8 a8 a4 r4 | % 23
-    r8 a4 a8 a4 r4 \bar "|."
+    r8 a4 a8 a4 r4 | % 24
+    a4 \once \override NoteHead #'style = #'cross e'8 \once \override
+    NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
+    #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 25
+    a,4 \once \override NoteHead #'style = #'cross e'8 \once \override
+    NoteHead #'style = #'cross e4. r4 \bar "|."
     }
 
 
