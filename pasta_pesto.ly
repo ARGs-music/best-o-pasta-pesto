@@ -58,7 +58,7 @@ PartPTwoVoiceOne =  \relative bes, {
     \time 2/4  r4 f,8 f8 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
     f4 r4 r4 f8 f8 | % 22
-    f8 f8 r4 r4 f8 f8 | % 23
+    f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 f'8 f8 | % 24
     bes8 bes8 g8 g8 f8 f8 c8 c8 | % 25
     f,8 f8 f8 bes8 ~ bes2 \bar "|."
@@ -71,8 +71,9 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     -- "or." Add some cheese and gar -- "lic." Ok -- "ay," "more."
     "Then," you add the pine "nuts." Ok -- "ay," al -- "monds." Salt and
     ol -- ive oi -- l and pep -- "per," "too." "Then," you "mix..." and
-    squish it "down..." add some wat -- "er..." mix some "more." Then
-    you know "it's" best -- o pest -- o "'cause" I made it for "you!" }
+    squish it "down..." add some wat -- "er..." then mix some "more."
+    Then you know "it's" best -- o pest -- o "'cause" I made it for
+    "you!" }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
@@ -100,7 +101,7 @@ PartPThreeVoiceOne =  \relative bes, {
     \time 2/4  r4 f,8 f8 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
     f4 r4 r4 f8 f8 | % 22
-    f8 f8 r4 r4 f8 f8 | % 23
+    f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 d'8 d8 | % 24
     f8 f8 d8 d8 d8 d8 g,8 g8 | % 25
     a8 a8 f8 f8 ~ f2 \bar "|."
@@ -114,8 +115,8 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
-    "er..." mix some "more." Then you know "it's" best -- o pest -- o
-    "'cause" I made it for "you!" }
+    "er..." then mix some "more." Then you know "it's" best -- o pest --
+    o "'cause" I made it for "you!" }
 PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
