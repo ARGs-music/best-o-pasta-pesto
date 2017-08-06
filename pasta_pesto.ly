@@ -66,13 +66,13 @@ PartPTwoVoiceOne =  \relative bes, {
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
-    the best -- "o," try this best -- o pest -- "o," "it's" bet -- ter
-    than the rest -- "o." Put some bas -- il in the food pro -- cess --
-    "or." Add some cheese and gar -- "lic." Ok -- "ay," "more." "Then,"
-    you add the pine "nuts." Ok -- "ay," al -- "monds." Salt and ol --
-    ive oi -- l and pep -- "per," "too." "Then," you "mix..." and squish
-    it "down..." add some wat -- "er..." mix some "more." Then you know
-    "it's" best -- o pest -- o "'cause" I made it for "you!" }
+    the best -- "o," "here's" some best -- o pest -- o "that's" bet --
+    ter than the rest -- "o." Put some bas -- il in the food pro -- cess
+    -- "or." Add some cheese and gar -- "lic." Ok -- "ay," "more."
+    "Then," you add the pine "nuts." Ok -- "ay," al -- "monds." Salt and
+    ol -- ive oi -- l and pep -- "per," "too." "Then," you "mix..." and
+    squish it "down..." add some wat -- "er..." mix some "more." Then
+    you know "it's" best -- o pest -- o "'cause" I made it for "you!" }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
@@ -108,9 +108,9 @@ PartPThreeVoiceOne =  \relative bes, {
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
-    the best -- "o," try this best -- o pest -- "o," "it's" bet -- ter
-    than the rest -- "o." Put some bas -- il in the \skip4 proc -- ess
-    -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
+    the best -- "o," "here's" some best -- o pest -- o "that's" bet --
+    ter than the rest -- "o." Put some bas -- il in the \skip4 proc --
+    ess -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
