@@ -96,8 +96,8 @@ PartPFiveVoiceOne =  \relative a' {
     \clef "percussion" \key bes \major \numericTimeSignature\time 4/4 a4
     \once \override NoteHead #'style = #'cross e'4 a,8 a8 r4 | % 2
     r4 a4 r4 a8 a8 | % 3
-    r4 a4 r4 \once \override NoteHead #'style = #'cross e'8 \once
-    \override NoteHead #'style = #'cross e8 | % 4
+    r4 a4 r8 \once \override NoteHead #'style = #'cross e'8 \once
+    \override NoteHead #'style = #'cross e4 | % 4
     a,4 \once \override NoteHead #'style = #'cross e'8 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
     #'cross e4 \once \override NoteHead #'style = #'cross e8 \once
