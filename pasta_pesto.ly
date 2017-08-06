@@ -26,10 +26,10 @@ PartPOneVoiceOne =  \relative c' {
 
 PartPTwoVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
-    \once \override NoteHead #'style = #'cross bes4 r8 \once \override
-    NoteHead #'style = #'cross bes4. r4 | % 3
-    \once \override NoteHead #'style = #'cross bes4 r8 \once \override
-    NoteHead #'style = #'cross bes4. f'8 f8 | % 4
+    \once \override NoteHead #'style = #'cross bes4. \once \override
+    NoteHead #'style = #'cross bes4 r8 r4 | % 3
+    \once \override NoteHead #'style = #'cross bes4. \once \override
+    NoteHead #'style = #'cross bes4 r8 f'8 f8 | % 4
     bes8 bes8 d,8 d8 g8 g8 bes,4 | % 5
     \time 5/4  es8 es8 es8 c4 c4 r8 r4 | % 6
     \numericTimeSignature\time 4/4  bes8 bes8 bes8 bes8 d8 d8 d8 es8 ~ | % 7
@@ -43,17 +43,17 @@ PartPTwoVoiceOne =  \relative bes, {
     \numericTimeSignature\time 4/4  r4 f,8 f8 f4 r4 \bar "|."
     }
 
-PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm," "meow." "Mmm," "meow."
-    If "you'd" like some past -- a pest -- o "that's" real -- ly the
-    best -- "o," try this best -- o pest -- "o," "it's" bet -- ter than
-    the rest -- "o." Put some bas -- il in the food pro -- cess -- "or."
-    Add some cheese and gar -- "lic." Ok -- "ay," "more." }
+PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
+    "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
+    the best -- "o," try this best -- o pest -- "o," "it's" bet -- ter
+    than the rest -- "o." Put some bas -- il in the food pro -- cess --
+    "or." Add some cheese and gar -- "lic." Ok -- "ay," "more." }
 PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
-    \once \override NoteHead #'style = #'cross bes4 r8 \once \override
-    NoteHead #'style = #'cross bes4. r4 | % 3
-    \once \override NoteHead #'style = #'cross bes4 r8 \once \override
-    NoteHead #'style = #'cross bes4. d8 d8 | % 4
+    \once \override NoteHead #'style = #'cross bes4. \once \override
+    NoteHead #'style = #'cross bes4 r8 r4 | % 3
+    \once \override NoteHead #'style = #'cross bes4. \once \override
+    NoteHead #'style = #'cross bes4 r8 d8 d8 | % 4
     f8 f8 bes,8 bes8 g8 g8 g4 | % 5
     \time 5/4  g8 g8 g8 a4 a4 r8 r4 | % 6
     \numericTimeSignature\time 4/4  f8 f8 f8 f8 bes8 bes8 bes8 bes8 ~ | % 7
@@ -67,7 +67,7 @@ PartPThreeVoiceOne =  \relative bes, {
     \numericTimeSignature\time 4/4  f8 f8 r2 r4 \bar "|."
     }
 
-PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm," "meow." "Mmm,"
+PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," try this best -- o pest -- "o," "it's" bet -- ter
     than the rest -- "o." Put some bas -- il in the \skip4 proc -- ess
