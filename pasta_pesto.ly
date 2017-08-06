@@ -26,7 +26,8 @@ PartPOneVoiceOne =  \relative f' {
     c2. r4 | % 16
     r2 r4 c4 | % 17
     d2 bes2 | % 18
-    bes4. a8 ~ a4. r8 \bar "|."
+    bes4. a8 ~ a4. r8 | % 19
+    \time 2/4  R2*8 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
@@ -50,7 +51,8 @@ PartPTwoVoiceOne =  \relative bes, {
     r4 es8 es8 c8 c4 r8 | % 16
     R1 | % 17
     bes8 bes8 bes8 bes8 d8 d8 d4 | % 18
-    es8 es4 f8 ~ f4. r8 \bar "|."
+    es8 es4 f8 ~ f4. r8 | % 19
+    \time 2/4  R2*8 \bar "|."
     }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -83,7 +85,8 @@ PartPThreeVoiceOne =  \relative bes, {
     es8 es8 g,8 g8 a8 a4 r8 | % 16
     R1 | % 17
     f8 f8 f8 f8 bes8 bes8 bes4 | % 18
-    bes8 bes4 c8 ~ c4. r8 \bar "|."
+    bes8 bes4 c8 ~ c4. r8 | % 19
+    \time 2/4  R2*8 \bar "|."
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
@@ -100,7 +103,7 @@ PartPFourVoiceOne =  \relative bes,, {
     bes2 es4 g4 | % 5
     \time 5/4  c,2 f2 r4 | % 6
     \numericTimeSignature\time 4/4  r4 bes,4 g2 | % 7
-    g4 ~ g4 f2 | % 8
+    g2 f2 | % 8
     \time 2/4  R2 | % 9
     \numericTimeSignature\time 4/4  bes4. c8 d4 es4 | \barNumberCheck
     #10
@@ -111,8 +114,9 @@ PartPFourVoiceOne =  \relative bes,, {
     bes2 es4 g4 | % 15
     c,2 f2 | % 16
     R1 | % 17
-    r4 bes,4 g4 ~ g4 | % 18
-    g4 ~ g4 f2 \bar "|."
+    r4 bes,4 g2 | % 18
+    g2 f2 | % 19
+    \time 2/4  R2*8 \bar "|."
     }
 
 PartPFiveVoiceOne =  \relative a' {
@@ -161,8 +165,13 @@ PartPFiveVoiceOne =  \relative a' {
     #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 18
     \once \override NoteHead #'style = #'cross e4 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
-    #'cross e8 \once \override NoteHead #'style = #'cross e4 r4 \bar
-    "|."
+    #'cross e8 \once \override NoteHead #'style = #'cross e4 \once
+    \override TupletBracket #'stencil = ##f
+    \times 2/3  {
+        a,8 a8 a8 }
+    | % 19
+    \time 2/4  a4 r4 | \barNumberCheck #20
+    R2*7 \bar "|."
     }
 
 
