@@ -63,15 +63,19 @@ PartPThreeVoiceOne =  \relative bes, {
     \barNumberCheck #10
     \time 3/4  a8 a8 f4 r4 | % 11
     f8 f8 es8 es8 f8 f8 ~ | % 12
-    f8 r4 r8 f4 | % 13
-    \numericTimeSignature\time 4/4  f8 f8 r2 r4 \bar "|."
+    f8 r4 r8 \once \override NoteHead #'style = #'cross f8 \once
+    \override NoteHead #'style = #'cross f8 | % 13
+    \numericTimeSignature\time 4/4  \once \override NoteHead #'style =
+    #'cross f8 \once \override NoteHead #'style = #'cross f8 r2 r4 \bar
+    "|."
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," try this best -- o pest -- "o," "it's" bet -- ter
     than the rest -- "o." Put some bas -- il in the \skip4 proc -- ess
-    -- "or." Add some cheese and gar -- "lic." More gar -- "lic." }
+    -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
+    "lic." }
 PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
