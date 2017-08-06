@@ -28,9 +28,8 @@ PartPOneVoiceOne =  \relative f' {
     d2 bes2 | % 18
     bes4. a8 ~ a4. r8 | % 19
     \time 2/4  R2 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  R1*4 | % 24
-    r2 bes4 c4 | % 25
-    c4 c8 d8 ~ d4 r4 \bar "|."
+    \numericTimeSignature\time 4/4  R1*5 | % 25
+    c4 c8 d8 ~ d2 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
