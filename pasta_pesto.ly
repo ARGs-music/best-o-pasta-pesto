@@ -31,7 +31,7 @@ PartPOneVoiceOne =  \relative f' {
     \numericTimeSignature\time 4/4  R1*4 | % 25
     r2. es'4 | % 26
     c4 c8 d8 ~ d4. r8 | % 27
-    r2. r8 bes8 | % 28
+    r2. r8 d8 | % 28
     c4 c8 d8 ~ d4 bes'4 \bar "|."
     }
 
