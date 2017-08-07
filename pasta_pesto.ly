@@ -115,8 +115,8 @@ PartPThreeVoiceOne =  \relative bes, {
 PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
-    ter than the rest -- "o." Put some bas -- il in the \skip4 proc --
-    ess -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
+    ter than the rest -- "o." Put some bas -- il in the food proc -- ess
+    -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
     -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
