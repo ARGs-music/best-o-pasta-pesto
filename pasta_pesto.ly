@@ -15,23 +15,23 @@
     }
 PartPOneVoiceOne =  \relative f' {
     \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=155 R1*4 | % 5
-    \time 5/4  R4*5 | % 6
-    \numericTimeSignature\time 4/4  R1*2 | % 8
-    \time 2/4  s2 | % 9
-    \numericTimeSignature\time 4/4  R1 | \barNumberCheck #10
-    \time 3/4  R2.*3 | % 13
-    \numericTimeSignature\time 4/4  r2 r4 f4 | % 14
-    bes,1 | % 15
-    c2. r4 | % 16
-    r2 r4 c4 | % 17
-    d2 bes2 | % 18
-    bes4. a8 ~ a4. r8 | % 19
-    \time 2/4  R2 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  R1*4 | % 24
-    r2. r8 c8 | % 25
-    c4 c8 d8 ~ d4. r8 | % 26
-    r2. r8 bes8 | % 27
+    \tempo 4=155 R1*5 | % 6
+    \time 2/4  R2 | % 7
+    \numericTimeSignature\time 4/4  R1*2 | % 9
+    \time 2/4  s2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  R1 | % 11
+    \time 3/4  R2.*3 | % 14
+    \numericTimeSignature\time 4/4  r2 r4 f4 | % 15
+    bes,1 | % 16
+    c2. r4 | % 17
+    r2 r4 c4 | % 18
+    d2 bes2 | % 19
+    bes4. a8 ~ a4. r8 | \barNumberCheck #20
+    \time 2/4  R2 | % 21
+    \numericTimeSignature\time 4/4  R1*4 | % 25
+    r2. r8 c8 | % 26
+    c4 c8 d8 ~ d4. r8 | % 27
+    r2. r8 bes8 | % 28
     c4 c8 d8 ~ d4 bes'4 \bar "|."
     }
 
@@ -42,29 +42,29 @@ PartPTwoVoiceOne =  \relative bes, {
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 f'8 f8 | % 4
     bes8 bes8 d,8 d8 g8 g8 bes,4 | % 5
-    \time 5/4  es8 es8 es8 c4 c8 ~ c4. r8 | % 6
-    \numericTimeSignature\time 4/4  bes8 bes8 bes8 bes8 d8 d8 d8 es8 ~ | % 7
-    es8 es8 es8 es8 f8 f4 r8 | % 8
-    \time 2/4  R2 | % 9
-    \numericTimeSignature\time 4/4  bes8 bes8 g8 g8 f8 f8 c4 |
-    \barNumberCheck #10
-    \time 3/4  f,8 f8 f4 r4 | % 11
-    bes8 bes8 g8 g8 c8 c8 ~ | % 12
-    c8 r2 r8 | % 13
-    \numericTimeSignature\time 4/4  r4 f,8 f8 f4 r4 | % 14
-    bes'8 bes8 d,8 d8 g8 g8 r4 | % 15
-    r4 es8 es8 c8 c4 r8 | % 16
-    R1 | % 17
-    bes8 bes8 bes8 bes8 d8 d8 d4 | % 18
-    es8 es4 f8 ~ f4. r8 | % 19
-    \time 2/4  r4 f,8 f8 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
-    f4 r4 r4 f8 f8 | % 22
-    f8 f8 r4 r8 f8 f8 f8 | % 23
-    f4 r4 r4 f'8 f8 | % 24
-    bes8 bes8 g8 g8 f8 f8 c8 c8 | % 25
-    f,8 f8 f8 bes8 ~ bes4. r8 | % 26
-    r2. r8 bes8 | % 27
+    es8 es8 es8 c4 c8 ~ c4 ~ | % 6
+    \time 2/4  c8 r4 r8 | % 7
+    \numericTimeSignature\time 4/4  bes8 bes8 bes8 bes8 d8 d8 d8 es8 ~ | % 8
+    es8 es8 es8 es8 f8 f4 r8 | % 9
+    \time 2/4  R2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  bes8 bes8 g8 g8 f8 f8 c4 | % 11
+    \time 3/4  f,8 f8 f4 r4 | % 12
+    bes8 bes8 g8 g8 c8 c8 ~ | % 13
+    c8 r2 r8 | % 14
+    \numericTimeSignature\time 4/4  r4 f,8 f8 f4 r4 | % 15
+    bes'8 bes8 d,8 d8 g8 g8 r4 | % 16
+    r4 es8 es8 c8 c4 r8 | % 17
+    R1 | % 18
+    bes8 bes8 bes8 bes8 d8 d8 d4 | % 19
+    es8 es4 f8 ~ f4. r8 | \barNumberCheck #20
+    \time 2/4  r4 f,8 f8 | % 21
+    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 22
+    f4 r4 r4 f8 f8 | % 23
+    f8 f8 r4 r8 f8 f8 f8 | % 24
+    f4 r4 r4 f'8 f8 | % 25
+    bes8 bes8 g8 g8 f8 f8 c8 c8 | % 26
+    f,8 f8 f8 bes8 ~ bes4. r8 | % 27
+    r2. r8 bes8 | % 28
     c8 d8 c8 bes8 ~ bes4 bes'4 \bar "|."
     }
 
@@ -85,31 +85,31 @@ PartPThreeVoiceOne =  \relative bes, {
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 d8 d8 | % 4
     f8 f8 bes,8 bes8 g8 g8 g4 | % 5
-    \time 5/4  g8 g8 g8 a4 a8 ~ a4. r8 | % 6
-    \numericTimeSignature\time 4/4  f8 f8 f8 f8 bes8 bes8 bes8 bes8 ~ | % 7
-    bes8 bes8 bes8 bes8 c8 c4 r8 | % 8
-    \time 2/4  R2 | % 9
-    \numericTimeSignature\time 4/4  f8 f8 d8 d8 d8 d8 g,4 |
-    \barNumberCheck #10
-    \time 3/4  a8 a8 f4 r4 | % 11
-    f8 f8 es8 es8 f8 f8 ~ | % 12
+    g8 g8 g8 a4 a8 ~ a4 ~ | % 6
+    \time 2/4  a8 r4 r8 | % 7
+    \numericTimeSignature\time 4/4  f8 f8 f8 f8 bes8 bes8 bes8 bes8 ~ | % 8
+    bes8 bes8 bes8 bes8 c8 c4 r8 | % 9
+    \time 2/4  R2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  f8 f8 d8 d8 d8 d8 g,4 | % 11
+    \time 3/4  a8 a8 f4 r4 | % 12
+    f8 f8 es8 es8 f8 f8 ~ | % 13
     f8 r4 r8 \once \override NoteHead #'style = #'cross f8 \once
-    \override NoteHead #'style = #'cross f8 | % 13
+    \override NoteHead #'style = #'cross f8 | % 14
     \numericTimeSignature\time 4/4  \once \override NoteHead #'style =
-    #'cross f8 \once \override NoteHead #'style = #'cross f8 r2 r4 | % 14
-    f'8 f8 bes,8 bes8 g8 g8 bes8 bes8 | % 15
-    es8 es8 g,8 g8 a8 a4 r8 | % 16
-    R1 | % 17
-    f8 f8 f8 f8 bes8 bes8 bes4 | % 18
-    bes8 bes4 c8 ~ c4. r8 | % 19
-    \time 2/4  r4 f,8 f8 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 21
-    f4 r4 r4 f8 f8 | % 22
-    f8 f8 r4 r8 f8 f8 f8 | % 23
-    f4 r4 r4 d'8 d8 | % 24
-    f8 f8 d8 d8 d8 d8 g,8 g8 | % 25
-    a8 a8 f8 f8 ~ f4. r8 | % 26
-    r2. r8 f8 | % 27
+    #'cross f8 \once \override NoteHead #'style = #'cross f8 r2 r4 | % 15
+    f'8 f8 bes,8 bes8 g8 g8 bes8 bes8 | % 16
+    es8 es8 g,8 g8 a8 a4 r8 | % 17
+    R1 | % 18
+    f8 f8 f8 f8 bes8 bes8 bes4 | % 19
+    bes8 bes4 c8 ~ c4. r8 | \barNumberCheck #20
+    \time 2/4  r4 f,8 f8 | % 21
+    \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 22
+    f4 r4 r4 f8 f8 | % 23
+    f8 f8 r4 r8 f8 f8 f8 | % 24
+    f4 r4 r4 d'8 d8 | % 25
+    f8 f8 d8 d8 d8 d8 g,8 g8 | % 26
+    a8 a8 f8 f8 ~ f4. r8 | % 27
+    r2. r8 f8 | % 28
     f8 f8 f8 f8 ~ f4 f'4 \bar "|."
     }
 
@@ -127,26 +127,26 @@ PartPFourVoiceOne =  \relative bes,, {
     \transposition c \clef "bass_8" \key bes \major
     \numericTimeSignature\time 4/4 R1*3 | % 4
     bes2 es4 g4 | % 5
-    \time 5/4  c,2 f2 r4 | % 6
-    \numericTimeSignature\time 4/4  r4 bes,4 g2 | % 7
-    g2 f2 | % 8
-    \time 2/4  R2 | % 9
-    \numericTimeSignature\time 4/4  bes4. c8 d4 es4 | \barNumberCheck
-    #10
-    \time 3/4  f2 r4 | % 11
-    d4 es4 a,4 ~ | % 12
-    a4 r2 | % 13
-    \numericTimeSignature\time 4/4  R1 | % 14
-    bes2 es4 g4 | % 15
-    c,2 f2 | % 16
-    R1 | % 17
-    r4 bes,4 g2 | % 18
-    g2 f2 | % 19
-    \time 2/4  R2 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  R1*4 | % 24
-    bes2. es4 | % 25
-    f4 f,8 bes8 ~ bes4. r8 | % 26
-    R1 | % 27
+    c,2 f2 | % 6
+    \time 2/4  R2 | % 7
+    \numericTimeSignature\time 4/4  r4 bes,4 g2 | % 8
+    g2 f2 | % 9
+    \time 2/4  R2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  bes4. c8 d4 es4 | % 11
+    \time 3/4  f2 r4 | % 12
+    d4 es4 a,4 ~ | % 13
+    a4 r2 | % 14
+    \numericTimeSignature\time 4/4  R1 | % 15
+    bes2 es4 g4 | % 16
+    c,2 f2 | % 17
+    R1 | % 18
+    r4 bes,4 g2 | % 19
+    g2 f2 | \barNumberCheck #20
+    \time 2/4  R2 | % 21
+    \numericTimeSignature\time 4/4  R1*4 | % 25
+    bes2. es4 | % 26
+    f4 f,8 bes8 ~ bes4. r8 | % 27
+    R1 | % 28
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
 
@@ -160,65 +160,66 @@ PartPFiveVoiceOne =  \relative a' {
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
     #'cross e4 \once \override NoteHead #'style = #'cross e8 \once
     \override NoteHead #'style = #'cross e8 | % 5
-    \time 5/4  \once \override NoteHead #'style = #'cross e4 \once
-    \override NoteHead #'style = #'cross e8 \once \override NoteHead
-    #'style = #'cross e8 \once \override NoteHead #'style = #'cross e4
-    a,8 a8 \once \override NoteHead #'style = #'cross e'4 | % 6
-    \numericTimeSignature\time 4/4  r4 \once \override NoteHead #'style
-    = #'cross e8 \once \override NoteHead #'style = #'cross e8 \once
-    \override NoteHead #'style = #'cross e4 \once \override NoteHead
-    #'style = #'cross e4 | % 7
     \once \override NoteHead #'style = #'cross e4 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
-    #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 8
-    \time 2/4  a4 \once \override NoteHead #'style = #'cross e'4 | % 9
+    #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 6
+    \time 2/4  \once \override NoteHead #'style = #'cross e'4 a,4 | % 7
+    \numericTimeSignature\time 4/4  r4 \once \override NoteHead #'style
+    = #'cross e'8 \once \override NoteHead #'style = #'cross e8 \once
+    \override NoteHead #'style = #'cross e4 \once \override NoteHead
+    #'style = #'cross e4 | % 8
+    \once \override NoteHead #'style = #'cross e4 \once \override
+    NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
+    #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 9
+    \time 2/4  a4 \once \override NoteHead #'style = #'cross e'4 |
+    \barNumberCheck #10
     \numericTimeSignature\time 4/4  a,4 r4 a8 a8 \once \override
-    NoteHead #'style = #'cross e'4 | \barNumberCheck #10
+    NoteHead #'style = #'cross e'4 | % 11
     \time 3/4  a,4 \once \override NoteHead #'style = #'cross e'8 \once
     \override NoteHead #'style = #'cross e8 \once \override NoteHead
-    #'style = #'cross e4 | % 11
+    #'style = #'cross e4 | % 12
     r4 \once \override NoteHead #'style = #'cross e4 \once \override
-    NoteHead #'style = #'cross e4 | % 12
-    a,8 a8 a4 r4 | % 13
+    NoteHead #'style = #'cross e4 | % 13
+    a,8 a8 a4 r4 | % 14
     \numericTimeSignature\time 4/4  r2 r4 \once \override NoteHead
-    #'style = #'cross e'4 | % 14
+    #'style = #'cross e'4 | % 15
     a,4 \once \override NoteHead #'style = #'cross e'8 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
     #'cross e4 \once \override NoteHead #'style = #'cross e8 \once
-    \override NoteHead #'style = #'cross e8 | % 15
+    \override NoteHead #'style = #'cross e8 | % 16
     \once \override NoteHead #'style = #'cross e4 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
-    #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 16
+    #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 17
     \once \override NoteHead #'style = #'cross e'8 \once \override
-    NoteHead #'style = #'cross e8 a,4 a4 r4 | % 17
+    NoteHead #'style = #'cross e8 a,4 a4 r4 | % 18
     a4 \once \override NoteHead #'style = #'cross e'8 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
-    #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 18
+    #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 19
     \once \override NoteHead #'style = #'cross e4 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
     #'cross e8 \once \override NoteHead #'style = #'cross e4 \once
     \override TupletBracket #'stencil = ##f
     \times 2/3  {
         a,8 a8 a8 }
-    | % 19
-    \time 2/4  a4 r4 | \barNumberCheck #20
-    \numericTimeSignature\time 4/4  r4 a4 a4 r4 | % 21
+    | \barNumberCheck #20
+    \time 2/4  a4 r4 | % 21
+    \numericTimeSignature\time 4/4  r4 a4 a4 r4 | % 22
     r8 a8 \once \override TupletBracket #'stencil = ##f
     \times 2/3  {
         a8 a8 a8 }
-    a4 r4 | % 22
-    r4 a8 a8 a4 r4 | % 23
-    r8 a4 a8 a4 r4 | % 24
+    a4 r4 | % 23
+    r4 a8 a8 a4 r4 | % 24
+    r8 a4 a8 a4 r4 | % 25
     a4 \once \override NoteHead #'style = #'cross e'8 \once \override
     NoteHead #'style = #'cross e8 \once \override NoteHead #'style =
-    #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 25
+    #'cross e4 \once \override NoteHead #'style = #'cross e4 | % 26
     a,4 \once \override NoteHead #'style = #'cross e'8 \once \override
-    NoteHead #'style = #'cross e4 a,4 a8 | % 26
+    NoteHead #'style = #'cross e4 a,4 a8 | % 27
     \once \override NoteHead #'style = #'cross e'4 \once \override
     TupletBracket #'stencil = ##f
     \times 2/3  {
         a,8 a8 a8 }
-    \once \override NoteHead #'style = #'cross e'8 a,8 r8 r8 | % 27
+    \once \override NoteHead #'style = #'cross e'8 a,8 r8 r8 | % 28
     r4. a4. <a \tweak #'style #'cross e'>4 \bar "|."
     }
 
