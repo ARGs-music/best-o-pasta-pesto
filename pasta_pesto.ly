@@ -4,7 +4,6 @@
 
 \header {
     encodingsoftware = "MuseScore 2.0.3"
-    encodingdate = "2017-08-06"
     title = "Pasta Pesto"
     }
 
@@ -13,7 +12,7 @@
         skipBars = ##t
         }
     }
-PartPOneVoiceOne =  \relative f' {
+PartPOneVoiceOne =  \relative bes {
     \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
     \tempo 4=155 R1*5 | % 6
     \time 2/4  R2 | % 7
@@ -21,16 +20,16 @@ PartPOneVoiceOne =  \relative f' {
     \time 2/4  s2 | \barNumberCheck #10
     \numericTimeSignature\time 4/4  R1 | % 11
     \time 3/4  R2.*3 | % 14
-    \numericTimeSignature\time 4/4  r2 r4 f4 | % 15
-    bes,1 | % 16
+    \numericTimeSignature\time 4/4  R1 | % 15
+    bes1 | % 16
     c2. r4 | % 17
-    r2 r4 c4 | % 18
+    R1 | % 18
     d2 bes2 | % 19
     bes4. a8 ~ a4. r8 | \barNumberCheck #20
     \time 2/4  R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
-    r2. es'4 | % 26
-    c4 c8 d8 ~ d4. r8 | % 27
+    f'8 f8 r4 f4 g4 | % 26
+    c,4 c8 d8 ~ d4. r8 | % 27
     r2. r8 d8 | % 28
     c4 c8 d8 ~ d4 bes'4 \bar "|."
     }
