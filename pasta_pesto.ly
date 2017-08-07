@@ -29,7 +29,7 @@ PartPOneVoiceOne =  \relative f' {
     bes4. a8 ~ a4. r8 | % 19
     \time 2/4  R2 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  R1*5 | % 25
-    c4 c8 d8 ~ d4 r4 | % 26
+    c4 c8 d8 ~ d4. r8 | % 26
     r2. r8 bes8 | % 27
     c4 c8 d8 ~ d4 bes'4 \bar "|."
     }
@@ -41,7 +41,7 @@ PartPTwoVoiceOne =  \relative bes, {
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 f'8 f8 | % 4
     bes8 bes8 d,8 d8 g8 g8 bes,4 | % 5
-    \time 5/4  es8 es8 es8 c4 c4 r8 r4 | % 6
+    \time 5/4  es8 es8 es8 c4 c8 ~ c4. r8 | % 6
     \numericTimeSignature\time 4/4  bes8 bes8 bes8 bes8 d8 d8 d8 es8 ~ | % 7
     es8 es8 es8 es8 f8 f4 r8 | % 8
     \time 2/4  R2 | % 9
@@ -62,7 +62,7 @@ PartPTwoVoiceOne =  \relative bes, {
     f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 f'8 f8 | % 24
     bes8 bes8 g8 g8 f8 f8 c8 c8 | % 25
-    f,8 f8 f8 bes8 ~ bes4 r4 | % 26
+    f,8 f8 f8 bes8 ~ bes4. r8 | % 26
     r2. r8 bes8 | % 27
     c8 d8 c8 bes8 ~ bes4 bes'4 \bar "|."
     }
@@ -84,7 +84,7 @@ PartPThreeVoiceOne =  \relative bes, {
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 d8 d8 | % 4
     f8 f8 bes,8 bes8 g8 g8 g4 | % 5
-    \time 5/4  g8 g8 g8 a4 a4 r8 r4 | % 6
+    \time 5/4  g8 g8 g8 a4 a8 ~ a4. r8 | % 6
     \numericTimeSignature\time 4/4  f8 f8 f8 f8 bes8 bes8 bes8 bes8 ~ | % 7
     bes8 bes8 bes8 bes8 c8 c4 r8 | % 8
     \time 2/4  R2 | % 9
@@ -107,7 +107,7 @@ PartPThreeVoiceOne =  \relative bes, {
     f8 f8 r4 r8 f8 f8 f8 | % 23
     f4 r4 r4 d'8 d8 | % 24
     f8 f8 d8 d8 d8 d8 g,8 g8 | % 25
-    a8 a8 f8 f8 ~ f4 r4 | % 26
+    a8 a8 f8 f8 ~ f4. r8 | % 26
     r2. r8 f8 | % 27
     f8 f8 f8 f8 ~ f4 f'4 \bar "|."
     }
@@ -144,7 +144,7 @@ PartPFourVoiceOne =  \relative bes,, {
     \time 2/4  R2 | \barNumberCheck #20
     \numericTimeSignature\time 4/4  R1*4 | % 24
     bes2. es4 | % 25
-    f4 f,8 bes8 ~ bes4 r4 | % 26
+    f4 f,8 bes8 ~ bes4. r8 | % 26
     R1 | % 27
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
