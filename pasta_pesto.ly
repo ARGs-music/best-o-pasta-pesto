@@ -14,24 +14,37 @@
     }
 PartPOneVoiceOne =  \relative bes {
     \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=155 R1*5 | % 6
+    \tempo 4=155 R1*3 | % 4
+    \mark \markup { \box { 1 } } | % 4
+    R1*2 | % 6
     \time 2/4  R2 | % 7
-    \numericTimeSignature\time 4/4  R1*2 | % 9
+    \numericTimeSignature\time 4/4  | % 7
+    \mark \markup { \box { 2 } } R1*2 | % 9
     \time 2/4  s2 | \barNumberCheck #10
-    \numericTimeSignature\time 4/4  R1 | % 11
-    \time 3/4  R2.*3 | % 14
-    \numericTimeSignature\time 4/4  R1 | % 15
+    \numericTimeSignature\time 4/4  | \barNumberCheck #10
+    \mark \markup { \box { 3 } } R1 | % 11
+    \time 3/4  R2. | % 12
+    \mark \markup { \box { 4 } } | % 12
+    R2.*2 | % 14
+    \numericTimeSignature\time 4/4  | % 14
+    \mark \markup { \box { 5 } } R1 | % 15
+    \mark \markup { \box { 6 } } | % 15
     bes1 | % 16
+    \mark \markup { \box { 7 } } | % 16
     c2. r4 | % 17
     R1 | % 18
+    \mark \markup { \box { 8 } } | % 18
     d2 bes2 | % 19
     bes4. a8 ~ a4. r8 | \barNumberCheck #20
-    \time 2/4  R2 | % 21
+    \time 2/4  | \barNumberCheck #20
+    \mark \markup { \box { 9 } } R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
+    \mark \markup { \box { 10 } } | % 25
     f'8 f8 r4 f4 g4 | % 26
     c,4 c8 d8 ~ d4. r8 | % 27
     r2. r8 d8 | % 28
-    c8 a8 f'8 d8 ~ d4 bes4 \bar "|."
+    \mark \markup { \box { 11 } } | % 28
+    c4 f8 d8 ~ d4 bes4 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
