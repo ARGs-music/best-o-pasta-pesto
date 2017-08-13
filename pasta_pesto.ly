@@ -31,7 +31,7 @@ PartPOneVoiceOne =  \relative bes {
     f'8 f8 r4 f4 g4 | % 26
     c,4 c8 d8 ~ d4. r8 | % 27
     r2. r8 d8 | % 28
-    c4 c8 d8 ~ d4 bes'4 \bar "|."
+    c8 a8 f'8 d8 ~ d4 bes4 \bar "|."
     }
 
 PartPTwoVoiceOne =  \relative bes, {
