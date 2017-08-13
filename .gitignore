@@ -1,3 +1,4 @@
 .*
+/git_ignored
 *.mscz
 !.gitignore
