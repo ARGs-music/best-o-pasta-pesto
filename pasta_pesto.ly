@@ -131,7 +131,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     ter than the rest -- "o." Put some bas -- il in the food proc -- ess
     -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
     "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
-    -- "ay." añ -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
+    -- "ay." al -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
     "too." "Then," you "mix..." and squish it "down..." add some wat --
     "er..." then mix a -- "round." Then you know "it's" best -- o pest
     -- o "'cause" I made it for "you!" I made it for "you," "yeah!" }
