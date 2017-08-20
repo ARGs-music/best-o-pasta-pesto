@@ -40,8 +40,8 @@ PartPOneVoiceOne =  \relative bes {
     \mark \markup { \box { 9 } } R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
     \mark \markup { \box { 10 } } | % 25
-    f'8 f8 r4 f4 g4 | % 26
-    c,4 c8 d8 ~ d4. r8 | % 27
+    f'2 ~ f8 e4. | % 26
+    es8 es4 d8 ~ d4. r8 | % 27
     r2. r8 d8 | % 28
     \mark \markup { \box { 11 } } | % 28
     c4 f8 d8 ~ d4 bes4 \bar "|."
@@ -156,8 +156,8 @@ PartPFourVoiceOne =  \relative bes,, {
     g2 f2 | \barNumberCheck #20
     \time 2/4  R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
-    bes2. es4 | % 26
-    f4 f,8 bes8 ~ bes4. r8 | % 27
+    bes2. c4 | % 26
+    a4 a8 bes8 ~ bes4. r8 | % 27
     R1 | % 28
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
