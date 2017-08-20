@@ -279,7 +279,6 @@ PartPFiveVoiceOne =  \relative a' {
         
         >>
     \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {}
+    \midi {}
     }
 
