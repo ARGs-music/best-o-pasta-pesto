@@ -136,8 +136,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "er..." then mix a -- "round." Then you know "it's" best -- o pest
     -- o "'cause" I made it for "you!" I made it for "you," "yeah!" }
 PartPFourVoiceOne =  \relative bes,, {
-    \transposition c \clef "bass_8" \key bes \major
-    \numericTimeSignature\time 4/4 R1*3 | % 4
+    \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 R1*3 | % 4
     bes2 es4 g4 | % 5
     c,2 f2 | % 6
     \time 2/4  R2 | % 7
