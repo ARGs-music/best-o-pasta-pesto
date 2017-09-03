@@ -104,8 +104,8 @@ PartPThreeVoiceOne =  \relative bes, {
     \time 2/4  R2 | \barNumberCheck #10
     \numericTimeSignature\time 4/4  f8 f8 d8 d8 d8 d8 g,4 | % 11
     \time 3/4  a8 a8 f4 r4 | % 12
-    f8 f8 es8 es8 f8 f8 ~ | % 13
-    f8 r4 r8 \once \override NoteHead #'style = #'cross f8 \once
+    f8 f8 d8 d8 a'8 a8 ~ | % 13
+    a8 r4 r8 \once \override NoteHead #'style = #'cross f8 \once
     \override NoteHead #'style = #'cross f8 | % 14
     \numericTimeSignature\time 4/4  \once \override NoteHead #'style =
     #'cross f8 \once \override NoteHead #'style = #'cross f8 r2 r4 | % 15
@@ -145,8 +145,8 @@ PartPFourVoiceOne =  \relative bes,, {
     \time 2/4  R2 | \barNumberCheck #10
     \numericTimeSignature\time 4/4  bes4. c8 d4 es4 | % 11
     \time 3/4  f2 r4 | % 12
-    d4 es4 a,4 ~ | % 13
-    a4 r2 | % 14
+    d4 bes4 f4 ~ | % 13
+    f4 r2 | % 14
     \numericTimeSignature\time 4/4  R1 | % 15
     bes2 es4 g4 | % 16
     c,2 f2 | % 17
