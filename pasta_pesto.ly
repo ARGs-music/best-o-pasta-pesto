@@ -3,7 +3,7 @@
 % automatically converted by musicxml2ly from /tmp/pasta_pesto.xml
 
 \header {
-    encodingsoftware = "MuseScore 2.0.3"
+    encodingsoftware = "MuseScore 2.1.0"
     title = "Pasta Pesto"
     }
 
@@ -40,8 +40,8 @@ PartPOneVoiceOne =  \relative bes {
     \mark \markup { \box { 9 } } R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
     \mark \markup { \box { 10 } } | % 25
-    f'2 ~ f8 e4. | % 26
-    es8 es4 d8 ~ d4. r8 | % 27
+    f'4. f8 ~ f4 e4 | % 26
+    es4 es8 d8 ~ d4. r8 | % 27
     r2. r8 d8 | % 28
     \mark \markup { \box { 11 } } | % 28
     c4 f8 d8 ~ d4 bes4 \bar "|."
