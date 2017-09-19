@@ -184,8 +184,8 @@ PartPFiveVoiceOne =  \relative a' {
     #'cross e8 \once \override NoteHead #'style = #'cross e4 a,8 a8 | % 9
     \time 2/4  a4 \once \override NoteHead #'style = #'cross e'4 |
     \barNumberCheck #10
-    \numericTimeSignature\time 4/4  a,4 r4 a8 a8 \once \override
-    NoteHead #'style = #'cross e'4 | % 11
+    \numericTimeSignature\time 4/4  a,4 r4 r4 \once \override NoteHead
+    #'style = #'cross e'4 | % 11
     \time 3/4  a,4 \once \override NoteHead #'style = #'cross e'8 \once
     \override NoteHead #'style = #'cross e8 \once \override NoteHead
     #'style = #'cross e4 | % 12
