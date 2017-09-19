@@ -109,10 +109,10 @@ PartPThreeVoiceOne =  \relative bes, {
     \override NoteHead #'style = #'cross f8 | % 14
     \numericTimeSignature\time 4/4  \once \override NoteHead #'style =
     #'cross f8 \once \override NoteHead #'style = #'cross f8 r2 r4 | % 15
-    f'8 f8 bes,8 bes8 g8 g8 bes8 bes8 | % 16
-    es8 es8 g,8 g8 a8 a4 r8 | % 17
+    d'8 d8 bes8 bes8 g8 g8 bes8 bes8 | % 16
+    es8 es8 r4 r2 | % 17
     R1 | % 18
-    f8 f8 f8 f8 bes8 bes8 bes4 | % 19
+    f,8 f8 f8 f8 bes8 bes8 bes4 | % 19
     bes8 bes4 c8 ~ c4. r8 | \barNumberCheck #20
     \time 2/4  r4 f,8 f8 | % 21
     \numericTimeSignature\time 4/4  f4 r4. f8 f8 f8 | % 22
@@ -130,11 +130,11 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
     ter than the rest -- "o." Put some bas -- il in the food proc -- ess
     -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
-    "lic." "Then," you add the pine "nuts." Those are al -- "monds." Ok
-    -- "ay." al -- "monds." Salt and ol -- ive oi -- l and pep -- "per,"
-    "too." "Then," you "mix..." and squish it "down..." add some wat --
-    "er..." then mix a -- "round." Then you know "it's" best -- o pest
-    -- o "'cause" I made it for "you!" I made it for "you," "yeah!" }
+    "lic." "Then," you add the pine "nuts." Those are al -- "monds."
+    Salt and ol -- ive oi -- l and pep -- "per," "too." "Then," you
+    "mix..." and squish it "down..." add some wat -- "er..." then mix a
+    -- "round." Then you know "it's" best -- o pest -- o "'cause" I made
+    it for "you!" I made it for "you," "yeah!" }
 PartPFourVoiceOne =  \relative bes,, {
     \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 R1*3 | % 4
     bes2 es4 g4 | % 5
