@@ -48,6 +48,35 @@ PartPOneVoiceOne =  \relative bes {
     }
 
 PartPTwoVoiceOne =  \relative bes, {
+    \clef "treble_8" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
+    r2. bes4 ~ | % 3
+    bes1 | % 4
+    <bes' d>2 r4 <g bes>4 | % 5
+    <g c>4 <g c>8 <a c>8 ~ ~ <a c>2 ~ ~ | % 6
+    \time 2/4  <a c>8 r8 r4 | % 7
+    \numericTimeSignature\time 4/4  r4 <bes d>4 <d, bes'>2 | % 8
+    <es bes'>4 <es bes'>8 <f a>8 ~ ~ <f a>2 | % 9
+    \time 2/4  R2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  r4 <f bes>2 <es bes'>4 | % 11
+    \time 3/4  <f a>2 r4 | % 12
+    r4 <g bes>4 <f a>4 ~ ~ | % 13
+    <f a>4 r4 r4 | % 14
+    \numericTimeSignature\time 4/4  R1 | % 15
+    <f bes d>2 r4 <g bes es>4 | % 16
+    <g c es>4 <g c g'>8 <a c f>8 ~ ~ ~ <a c f>2 ~ ~ ~ | % 17
+    <a c f>8 r8 r4 r2 | % 18
+    r4 <bes d f>4 <d, bes' g'>2 | % 19
+    <es bes' g'>4 <es bes' g'>8 <f a a'>8 ~ ~ ~ <f a a'>2 |
+    \barNumberCheck #20
+    \time 2/4  R2 | % 21
+    \numericTimeSignature\time 4/4  R1*4 | % 25
+    <f bes d>2 r4 <c c' e>4 | % 26
+    <f c' f>4 <a, f' c'>8 <d f d'>8 ~ ~ ~ <d f d'>4. r8 | % 27
+    R1 | % 28
+    <f c' f>4 <f a c>8 <f bes d>8 ~ ~ ~ <f bes d>4 <f bes d>4 \bar "|."
+    }
+
+PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 r4 | % 3
@@ -80,7 +109,7 @@ PartPTwoVoiceOne =  \relative bes, {
     c8 d8 c8 bes8 ~ bes4 bes'4 \bar "|."
     }
 
-PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
+PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
     ter than the rest -- "o." Put some bas -- il in the food pro -- cess
@@ -90,7 +119,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     squish it "down..." add some wat -- "er..." then mix a -- "round."
     Then you know "it's" best -- o pest -- o "'cause" I made it for
     "you!" I made it for "you," "yeah!" }
-PartPThreeVoiceOne =  \relative bes, {
+PartPFourVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 r4 | % 3
@@ -125,7 +154,7 @@ PartPThreeVoiceOne =  \relative bes, {
     f8 f8 f8 f8 ~ f4 f'4 \bar "|."
     }
 
-PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
+PartPFourVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
     ter than the rest -- "o." Put some bas -- il in the food proc -- ess
@@ -135,8 +164,8 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "mix..." and squish it "down..." add some wat -- "er..." then mix a
     -- "round." Then you know "it's" best -- o pest -- o "'cause" I made
     it for "you!" I made it for "you," "yeah!" }
-PartPFourVoiceOne =  \relative bes,, {
     \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 R1*3 | % 4
+PartPFiveVoiceOne =  \relative bes,, {
     bes2 es4 g4 | % 5
     c,2 f2 | % 6
     \time 2/4  R2 | % 7
@@ -161,7 +190,7 @@ PartPFourVoiceOne =  \relative bes,, {
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
 
-PartPFiveVoiceOne =  \relative a' {
+PartPSixVoiceOne =  \relative a' {
     \clef "percussion" \key bes \major \numericTimeSignature\time 4/4 a4
     \once \override NoteHead #'style = #'cross e'4 a,8 a8 r4 | % 2
     r4 a4 r4 a8 a8 | % 3
@@ -246,33 +275,40 @@ PartPFiveVoiceOne =  \relative a' {
                 >>
             >>
         \new Staff <<
-            \set Staff.instrumentName = "Lead"
-            \set Staff.shortInstrumentName = "Lead"
+            \set Staff.instrumentName = "Wah pizz"
+            \set Staff.shortInstrumentName = "W. pizz."
             \context Staff << 
                 \context Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
-                \new Lyrics \lyricsto "PartPTwoVoiceOne" \PartPTwoVoiceOneLyricsOne
                 >>
             >>
         \new Staff <<
-            \set Staff.instrumentName = "Backup"
-            \set Staff.shortInstrumentName = "Bkup."
+            \set Staff.instrumentName = "Lead"
+            \set Staff.shortInstrumentName = "Lead"
             \context Staff << 
                 \context Voice = "PartPThreeVoiceOne" { \PartPThreeVoiceOne }
                 \new Lyrics \lyricsto "PartPThreeVoiceOne" \PartPThreeVoiceOneLyricsOne
                 >>
             >>
         \new Staff <<
+            \set Staff.instrumentName = "Backup"
+            \set Staff.shortInstrumentName = "Bkup."
+            \context Staff << 
+                \context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
+                \new Lyrics \lyricsto "PartPFourVoiceOne" \PartPFourVoiceOneLyricsOne
+                >>
+            >>
+        \new Staff <<
             \set Staff.instrumentName = "Bass"
             \set Staff.shortInstrumentName = "Bass"
             \context Staff << 
-                \context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
+                \context Voice = "PartPFiveVoiceOne" { \PartPFiveVoiceOne }
                 >>
             >>
         \new DrumStaff <<
             \set DrumStaff.instrumentName = "Percussion"
             \set DrumStaff.shortInstrumentName = "Perc."
             \context DrumStaff << 
-                \context DrumVoice = "PartPFiveVoiceOne" { \PartPFiveVoiceOne }
+                \context DrumVoice = "PartPSixVoiceOne" { \PartPSixVoiceOne }
                 >>
             >>
         
