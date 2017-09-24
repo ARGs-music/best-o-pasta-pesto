@@ -164,8 +164,11 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "mix..." and squish it "down..." add some wat -- "er..." then mix a
     -- "round." Then you know "it's" best -- o pest -- o "'cause" I made
     it for "you!" I made it for "you," "yeah!" }
-    \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 R1*3 | % 4
 PartPFiveVoiceOne =  \relative bes,, {
+    \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 bes1 ~
+    | % 2
+    bes1 ~ | % 3
+    bes1 | % 4
     bes2 es4 g4 | % 5
     c,2 f2 | % 6
     \time 2/4  R2 | % 7
@@ -185,7 +188,7 @@ PartPFiveVoiceOne =  \relative bes,, {
     \time 2/4  R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
     bes2. c4 | % 26
-    a4 a8 bes8 ~ bes4. r8 | % 27
+    a4 c8 bes8 ~ bes4. r8 | % 27
     R1 | % 28
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
