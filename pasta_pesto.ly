@@ -47,11 +47,43 @@ PartPOneVoiceOne =  \relative bes {
     c4 f8 d8 ~ d4 bes4 \bar "|."
     }
 
+PartPOneVoiceTwo =  \relative f {
+    \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
+    \tempo 4=155 s1*3 | % 4
+    \mark \markup { \box { 1 } } s1*2 | % 6
+    \time 2/4  s2 | % 7
+    \numericTimeSignature\time 4/4  | % 7
+    \mark \markup { \box { 2 } } s1*2 | % 9
+    \time 2/4  s2 | \barNumberCheck #10
+    \numericTimeSignature\time 4/4  | \barNumberCheck #10
+    \mark \markup { \box { 3 } } s1 | % 11
+    \time 3/4  s2. | % 12
+    \mark \markup { \box { 4 } } s2. s2. | % 14
+    \numericTimeSignature\time 4/4  | % 14
+    \mark \markup { \box { 5 } } s1 | % 15
+    \mark \markup { \box { 6 } } | % 15
+    f1 | % 16
+    \mark \markup { \box { 7 } } | % 16
+    g4. a8 ~ a2 s1 | % 18
+    \mark \markup { \box { 8 } } | % 18
+    bes2 g2 | % 19
+    g4. f8 ~ f2 | \barNumberCheck #20
+    \time 2/4  | \barNumberCheck #20
+    \mark \markup { \box { 9 } } s2 | % 21
+    \numericTimeSignature\time 4/4  s1 s1*3 | % 25
+    \mark \markup { \box { 10 } } | % 25
+    d'4. d8 ~ d4 c4 | % 26
+    c4 c8 bes8 ~ bes2 | % 27
+    r2. r8 bes8 | % 28
+    \mark \markup { \box { 11 } } | % 28
+    a4 c8 bes8 ~ bes4 f4 \bar "|."
+    }
+
 PartPTwoVoiceOne =  \relative bes, {
     \clef "treble_8" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
-    r2. bes4 ~ | % 3
-    bes1 | % 4
-    <bes' d>2 r4 <g bes>4 | % 5
+    r2. r8 <bes bes'>8 | % 3
+    bes4 r4 r2 | % 4
+    <bes' d>2. <g bes>4 | % 5
     <g c>4 <g c>8 <a c>8 ~ ~ <a c>2 ~ ~ | % 6
     \time 2/4  <a c>4 r4 | % 7
     \numericTimeSignature\time 4/4  r4 <bes d>4 <d, bes'>2 | % 8
@@ -59,10 +91,10 @@ PartPTwoVoiceOne =  \relative bes, {
     \time 2/4  <f a>4 r4 | \barNumberCheck #10
     \numericTimeSignature\time 4/4  r4 <f bes>2 <es bes'>4 | % 11
     \time 3/4  <f a>2 r4 | % 12
-    r4 <g bes>4 <f a>4 ~ ~ | % 13
-    <f a>4 r4 r4 | % 14
+    r4 <g bes>4 <f a>4 | % 13
+    <c' f>4 r4 r4 | % 14
     \numericTimeSignature\time 4/4  R1 | % 15
-    <f bes d>2 r4 <g bes es>4 | % 16
+    <f, bes d>2 r4 <g bes es>4 | % 16
     <g c es>4 <g c g'>8 <a c f>8 ~ ~ ~ <a c f>2 | % 17
     R1 | % 18
     r4 <bes d f>4 <d, bes' g'>2 | % 19
@@ -168,7 +200,7 @@ PartPFiveVoiceOne =  \relative bes,, {
     \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 bes1 ~
     | % 2
     bes1 ~ | % 3
-    bes1 | % 4
+    bes4 bes2. | % 4
     bes2 es4 g4 | % 5
     c,2 f2 | % 6
     \time 2/4  R2 | % 7
@@ -274,7 +306,8 @@ PartPSixVoiceOne =  \relative a' {
             \set Staff.instrumentName = "Violins"
             \set Staff.shortInstrumentName = "Vlns."
             \context Staff << 
-                \context Voice = "PartPOneVoiceOne" { \PartPOneVoiceOne }
+                \context Voice = "PartPOneVoiceOne" { \voiceOne \PartPOneVoiceOne }
+                \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
                 >>
             >>
         \new Staff <<
