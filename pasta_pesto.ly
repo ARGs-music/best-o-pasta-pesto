@@ -31,7 +31,7 @@ PartPOneVoiceOne =  \relative bes {
     \mark \markup { \box { 6 } } | % 15
     bes1 | % 16
     \mark \markup { \box { 7 } } | % 16
-    c2. r4 | % 17
+    c1 | % 17
     R1 | % 18
     \mark \markup { \box { 8 } } | % 18
     d2 bes2 | % 19
