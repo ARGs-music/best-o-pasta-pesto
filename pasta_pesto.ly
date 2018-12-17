@@ -1,6 +1,10 @@
 
 \version "2.18.2"
-% automatically converted by musicxml2ly from /tmp/pasta_pesto.xml
+
+\paper {
+    #(set-paper-size "letter")
+    left-margin = 20
+    }
 
 \header {
     encodingsoftware = "MuseScore 2.3.2"
@@ -11,8 +15,13 @@
 \layout {
     \context { \Score
         skipBars = ##t
+        \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 9)
+             (minimum-distance . 8)
+             (padding . 1))
         }
     }
+
 PartPOneVoiceOne =  \relative bes, {
     \clef "treble_8" \key bes \major \numericTimeSignature\time 4/4 | % 1
     \tempo 4=155 <bes bes'>4 r4 r2 | % 2
