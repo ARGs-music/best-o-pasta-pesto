@@ -3,8 +3,9 @@
 % automatically converted by musicxml2ly from /tmp/pasta_pesto.xml
 
 \header {
-    encodingsoftware = "MuseScore 2.1.0"
-    title = "Pasta Pesto"
+    encodingsoftware = "MuseScore 2.3.2"
+    composer = ARGs
+    title = "Best-o Pasta Pesto"
     }
 
 \layout {
@@ -12,103 +13,47 @@
         skipBars = ##t
         }
     }
-PartPOneVoiceOne =  \relative bes {
-    \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=155 R1*3 | % 4
+PartPOneVoiceOne =  \relative bes, {
+    \clef "treble_8" \key bes \major \numericTimeSignature\time 4/4 | % 1
+    \tempo 4=155 <bes bes'>4 r4 r2 | % 2
+    R1*2 | % 4
     \mark \markup { \box { 1 } } | % 4
-    R1*2 | % 6
-    \time 2/4  R2 | % 7
+    <bes' d>8 <bes d>4. <g bes>4 <g bes>4 | % 5
+    <g c>4 <g c>8 <a c>8 ~ ~ <a c>2 ~ ~ | % 6
+    \time 2/4  <a c>4 r4 | % 7
     \numericTimeSignature\time 4/4  | % 7
-    \mark \markup { \box { 2 } } R1*2 | % 9
-    \time 2/4  s2 | \barNumberCheck #10
+    \mark \markup { \box { 2 } } r4 <bes d>4 <d, bes'>2 | % 8
+    <es bes'>4 <es bes'>4 <f a>2 ~ ~ | % 9
+    \time 2/4  <f a>4 r4 | \barNumberCheck #10
     \numericTimeSignature\time 4/4  | \barNumberCheck #10
-    \mark \markup { \box { 3 } } R1 | % 11
-    \time 3/4  R2. | % 12
+    \mark \markup { \box { 3 } } <f bes>2 <f bes>4 <es bes'>4 | % 11
+    \time 3/4  <f a>2 r4 | % 12
     \mark \markup { \box { 4 } } | % 12
-    R2.*2 | % 14
+    <f bes>4 <g bes>4 <f a>4 ~ ~ | % 13
+    <f a>4 r4 r4 | % 14
     \numericTimeSignature\time 4/4  | % 14
     \mark \markup { \box { 5 } } R1 | % 15
     \mark \markup { \box { 6 } } | % 15
-    bes1 | % 16
+    <f bes d>2 <g bes es>4 <g bes es>4 | % 16
     \mark \markup { \box { 7 } } | % 16
-    c1 | % 17
+    <g c es>4 <g c g'>8 <a c f>8 ~ ~ ~ <a c f>2 | % 17
     R1 | % 18
     \mark \markup { \box { 8 } } | % 18
-    d2 bes2 | % 19
-    bes4. a8 ~ a2 | \barNumberCheck #20
+    r4 <bes d f>4 <d, bes' g'>2 | % 19
+    <es bes' g'>4 <es bes' g'>8 <f a a'>8 ~ ~ ~ <f a a'>2 |
+    \barNumberCheck #20
     \time 2/4  | \barNumberCheck #20
     \mark \markup { \box { 9 } } R2 | % 21
     \numericTimeSignature\time 4/4  R1*4 | % 25
     \mark \markup { \box { 10 } } | % 25
-    f'4. f8 ~ f4 e4 | % 26
-    es4 es8 d8 ~ d2 | % 27
-    r2. r8 d8 | % 28
-    \mark \markup { \box { 11 } } | % 28
-    c4 f8 d8 ~ d4 bes4 \bar "|."
-    }
-
-PartPOneVoiceTwo =  \relative f {
-    \clef "treble" \key bes \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=155 s1*3 | % 4
-    \mark \markup { \box { 1 } } s1*2 | % 6
-    \time 2/4  s2 | % 7
-    \numericTimeSignature\time 4/4  | % 7
-    \mark \markup { \box { 2 } } s1*2 | % 9
-    \time 2/4  s2 | \barNumberCheck #10
-    \numericTimeSignature\time 4/4  | \barNumberCheck #10
-    \mark \markup { \box { 3 } } s1 | % 11
-    \time 3/4  s2. | % 12
-    \mark \markup { \box { 4 } } s2. s2. | % 14
-    \numericTimeSignature\time 4/4  | % 14
-    \mark \markup { \box { 5 } } s1 | % 15
-    \mark \markup { \box { 6 } } | % 15
-    f1 | % 16
-    \mark \markup { \box { 7 } } | % 16
-    g4. a8 ~ a2 s1 | % 18
-    \mark \markup { \box { 8 } } | % 18
-    bes2 g2 | % 19
-    g4. f8 ~ f2 | \barNumberCheck #20
-    \time 2/4  | \barNumberCheck #20
-    \mark \markup { \box { 9 } } s2 | % 21
-    \numericTimeSignature\time 4/4  s1 s1*3 | % 25
-    \mark \markup { \box { 10 } } | % 25
-    d'4. d8 ~ d4 c4 | % 26
-    c4 c8 bes8 ~ bes2 | % 27
-    r2. r8 bes8 | % 28
-    \mark \markup { \box { 11 } } | % 28
-    a4 c8 bes8 ~ bes4 f4 \bar "|."
-    }
-
-PartPTwoVoiceOne =  \relative bes, {
-    \clef "treble_8" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
-    r2. r8 <bes bes'>8 | % 3
-    bes4 r4 r2 | % 4
-    <bes' d>2. <g bes>4 | % 5
-    <g c>4 <g c>8 <a c>8 ~ ~ <a c>2 ~ ~ | % 6
-    \time 2/4  <a c>4 r4 | % 7
-    \numericTimeSignature\time 4/4  r4 <bes d>4 <d, bes'>2 | % 8
-    <es bes'>4 <es bes'>8 <f a>8 ~ ~ <f a>2 ~ ~ | % 9
-    \time 2/4  <f a>4 r4 | \barNumberCheck #10
-    \numericTimeSignature\time 4/4  r4 <f bes>2 <es bes'>4 | % 11
-    \time 3/4  <f a>2 r4 | % 12
-    r4 <g bes>4 <f a>4 | % 13
-    <c' f>4 r4 r4 | % 14
-    \numericTimeSignature\time 4/4  R1 | % 15
-    <f, bes d>2 r4 <g bes es>4 | % 16
-    <g c es>4 <g c g'>8 <a c f>8 ~ ~ ~ <a c f>2 | % 17
-    R1 | % 18
-    r4 <bes d f>4 <d, bes' g'>2 | % 19
-    <es bes' g'>4 <es bes' g'>8 <f a a'>8 ~ ~ ~ <f a a'>2 |
-    \barNumberCheck #20
-    \time 2/4  R2 | % 21
-    \numericTimeSignature\time 4/4  R1*4 | % 25
-    <f bes d>2 r4 <c c' e>4 | % 26
+    <f bes d>2. <c c' e>4 | % 26
     <f c' f>4 <a, f' c'>8 <d f d'>8 ~ ~ ~ <d f d'>2 | % 27
     R1 | % 28
+    \mark \markup { \box { 11 } } | % 28
     <f c' f>4 <f a c>8 <f bes d>8 ~ ~ ~ <f bes d>4 <f bes d>4 \bar "|."
     }
 
-PartPThreeVoiceOne =  \relative bes, {
+PartPTwoVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 r4 | % 3
@@ -141,8 +86,8 @@ PartPThreeVoiceOne =  \relative bes, {
     c8 d8 c8 bes8 ~ bes4 bes'4 \bar "|."
     }
 
-PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
-    "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
+PartPTwoVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow!" "Mmm..."
+    "meow!" If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
     ter than the rest -- "o." Put some bas -- il in the food pro -- cess
     -- "or." Add some cheese and gar -- "lic." Ok -- "ay," "more."
@@ -151,7 +96,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     squish it "down..." add some wat -- "er..." then mix a -- "round."
     Then you know "it's" best -- o pest -- o "'cause" I made it for
     "you!" I made it for "you," "yeah!" }
-PartPFourVoiceOne =  \relative bes, {
+PartPThreeVoiceOne =  \relative bes, {
     \clef "bass" \key bes \major \numericTimeSignature\time 4/4 R1 | % 2
     \once \override NoteHead #'style = #'cross bes4. \once \override
     NoteHead #'style = #'cross bes4 r8 r4 | % 3
@@ -186,8 +131,8 @@ PartPFourVoiceOne =  \relative bes, {
     f8 f8 f8 f8 ~ f4 f'4 \bar "|."
     }
 
-PartPFourVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
-    "meow." If "you'd" like some past -- a pest -- o "that's" real -- ly
+PartPThreeVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow!" "Mmm..."
+    "meow!" If "you'd" like some past -- a pest -- o "that's" real -- ly
     the best -- "o," "here's" some best -- o pest -- o "that's" bet --
     ter than the rest -- "o." Put some bas -- il in the food proc -- ess
     -- "or." Add some cheese and gar -- "lic." "Meow," more gar --
@@ -196,11 +141,10 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { "Mmm..." "meow." "Mmm..."
     "mix..." and squish it "down..." add some wat -- "er..." then mix a
     -- "round." Then you know "it's" best -- o pest -- o "'cause" I made
     it for "you!" I made it for "you," "yeah!" }
-PartPFiveVoiceOne =  \relative bes,, {
-    \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 bes1 ~
-    | % 2
-    bes1 ~ | % 3
-    bes4 bes2. | % 4
+PartPFourVoiceOne =  \relative bes,, {
+    \clef "bass_8" \key bes \major \numericTimeSignature\time 4/4 bes4 r4
+    r2 | % 2
+    R1*2 | % 4
     bes2 es4 g4 | % 5
     c,2 f2 | % 6
     \time 2/4  R2 | % 7
@@ -225,7 +169,7 @@ PartPFiveVoiceOne =  \relative bes,, {
     f'4 f,8 bes8 ~ bes4 bes4 \bar "|."
     }
 
-PartPSixVoiceOne =  \relative a' {
+PartPFiveVoiceOne =  \relative a' {
     \clef "percussion" \key bes \major \numericTimeSignature\time 4/4 a4
     \once \override NoteHead #'style = #'cross e'4 a,8 a8 r4 | % 2
     r4 a4 r4 a8 a8 | % 3
@@ -303,48 +247,40 @@ PartPSixVoiceOne =  \relative a' {
 \score {
     <<
         \new Staff <<
-            \set Staff.instrumentName = "Violins"
-            \set Staff.shortInstrumentName = "Vlns."
-            \context Staff << 
-                \context Voice = "PartPOneVoiceOne" { \voiceOne \PartPOneVoiceOne }
-                \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
-                >>
-            >>
-        \new Staff <<
             \set Staff.instrumentName = "Wah pizz"
             \set Staff.shortInstrumentName = "W. pizz."
             \context Staff << 
-                \context Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
+                \context Voice = "PartPOneVoiceOne" { \PartPOneVoiceOne }
                 >>
             >>
         \new Staff <<
             \set Staff.instrumentName = "Lead"
             \set Staff.shortInstrumentName = "Lead"
             \context Staff << 
-                \context Voice = "PartPThreeVoiceOne" { \PartPThreeVoiceOne }
-                \new Lyrics \lyricsto "PartPThreeVoiceOne" \PartPThreeVoiceOneLyricsOne
+                \context Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
+                \new Lyrics \lyricsto "PartPTwoVoiceOne" \PartPTwoVoiceOneLyricsOne
                 >>
             >>
         \new Staff <<
             \set Staff.instrumentName = "Backup"
             \set Staff.shortInstrumentName = "Bkup."
             \context Staff << 
-                \context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
-                \new Lyrics \lyricsto "PartPFourVoiceOne" \PartPFourVoiceOneLyricsOne
+                \context Voice = "PartPThreeVoiceOne" { \PartPThreeVoiceOne }
+                \new Lyrics \lyricsto "PartPThreeVoiceOne" \PartPThreeVoiceOneLyricsOne
                 >>
             >>
         \new Staff <<
             \set Staff.instrumentName = "Bass"
             \set Staff.shortInstrumentName = "Bass"
             \context Staff << 
-                \context Voice = "PartPFiveVoiceOne" { \PartPFiveVoiceOne }
+                \context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
                 >>
             >>
         \new DrumStaff <<
             \set DrumStaff.instrumentName = "Percussion"
             \set DrumStaff.shortInstrumentName = "Perc."
             \context DrumStaff << 
-                \context DrumVoice = "PartPSixVoiceOne" { \PartPSixVoiceOne }
+                \context DrumVoice = "PartPFiveVoiceOne" { \PartPFiveVoiceOne }
                 >>
             >>
         
